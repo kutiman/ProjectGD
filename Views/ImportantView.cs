@@ -21,7 +21,6 @@ public class ImportantView : MonoBehaviour
     // in this case using a model, but for bigger things, using an interface
     // to implement data and functionality from other objects without knowledge of the source.
     // Dependency inversion make it easier to decouple code and create "plugable" modules
-    // here i implement
     public static ImportantView Create (ImportantDataModel model)
     {
         GameObject inst = App.C.popups.CreatePopup(prefabPath);
