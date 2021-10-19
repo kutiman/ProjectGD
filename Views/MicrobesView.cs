@@ -16,7 +16,7 @@ public class MicrobesView : MonoBehaviour
     float totalHealth = 0f; // total health should be outside
     private void Start()
     {
-        _microbes = _microbesParent.GetComponents<Microbe>().ToList();
+        _microbes = _microbesParent.GetComponentsInChildren<Microbe>().ToList();
     }
     void FixedUpdate()
     {
